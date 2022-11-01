@@ -1,0 +1,44 @@
+
+.video {
+  box-sizing: border-box;
+  position: relative;
+  width: 50%;
+  max-width: 280px;
+  height: 100%;
+  margin-bottom: 2vw;
+  cursor: pointer;
+}
+
+.video:nth-child(odd) {
+  padding-right: 0.6vw;
+}
+
+.video:hover .thumbnail_img {
+  transform: scale(1.06);
+}
+
+.thumbnail {
+  overflow: hidden;
+  width: 100%;
+  min-height: 120px;
+  max-height: 150px;
+}
+
+.thumbnail_img {
+  transition: transform .3s ease-in-out;
+}
+
+.metadata {
+  padding: 1vw 0.6vw;
+}
+
+.title,
+.channel {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.channel {
+  font-size: 0.6rem;
+  color: #ccc;
+}

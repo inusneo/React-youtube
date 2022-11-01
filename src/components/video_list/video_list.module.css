@@ -1,0 +1,5 @@
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
