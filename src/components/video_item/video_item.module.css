@@ -2,15 +2,17 @@
 .video {
   box-sizing: border-box;
   position: relative;
-  width: 50%;
   max-width: 280px;
   height: 100%;
   margin-bottom: 2vw;
+  padding: 0 0.3vw;
   cursor: pointer;
 }
-
-.video:nth-child(odd) {
-  padding-right: 0.6vw;
+.video.grid {
+  width: 50%;
+}
+.video.list {
+  width: 100%;
 }
 
 .video:hover .thumbnail_img {
