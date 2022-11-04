@@ -44,3 +44,12 @@
   font-size: 0.6rem;
   color: #ccc;
 }
+
+@media screen and (max-width: 48rem) {
+  
+}
+@media screen and (max-width: 23.438rem) {
+  .video {
+    max-width: 325px;
+  }
+}
