@@ -4,6 +4,11 @@
 .content {
   display: flex;
 }
+.video_active {
+  display: flex;
+  overflow: hidden;
+  height: 89vh;
+}
 .detail {
   flex: 1 1 70%;
 }

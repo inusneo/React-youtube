@@ -10,6 +10,9 @@ function App({ youtube }) {
 
   const selectVideo = (video) => {
     setSelectedVideo(video);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // selectedCont.classList.add("video_active");
   }
   const search = useCallback(
     query => {
@@ -26,7 +29,7 @@ function App({ youtube }) {
 
   return (
     <div className={styles.app}>
-      <SearchHeader onSearch={search}/>
+      <SearchHeader onSearch={search} onVideoClick={selectVideo} />
       <section className={styles.content}>
         {selectedVideo && (
           <div className={styles.detail}>

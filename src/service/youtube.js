@@ -45,7 +45,7 @@ class Youtube {
         id,
       },
     });
-
+    console.log(response.data.items[0]);
     if (response.data.items[0].hasOwnProperty("snippet")) {
       response.data.items[0].channelInfo = response.data.items[0].snippet;
       delete response.data.items[0].snippet;
@@ -65,7 +65,22 @@ class Youtube {
       },
     });
 
-    return response.data.items.map((item) => ({ ...item, id: item.id.videoId }));
+    const newVideos = [];
+
+    response.data.items.map((video) => {
+      return newVideos.push({ ...video, id: video.id.videoId });
+    });
+
+    // return response.data.items.map((item) => ({ ...item, id: item.id.videoId }));
+
+    this.finalList = [];
+
+    newVideos.map((video) => {
+      return this.finalList.push(this.channel(video.snippet.channelId, video));
+    });
+
+    return Promise.all(this.finalList) //
+      .then((values) => values);
   }
   // async search(query) {
   //   const response = await fetch(

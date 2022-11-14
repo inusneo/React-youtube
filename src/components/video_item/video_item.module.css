@@ -23,7 +23,7 @@
   overflow: hidden;
   width: 100%;
   min-height: 120px;
-  max-height: 150px;
+  max-height: 155px;
 }
 
 .thumbnail_img {
@@ -31,22 +31,52 @@
 }
 
 .metadata {
+  display: flex;
+  align-items: center;
   padding: 1vw 0.6vw;
 }
-
+.chthumbnail_img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
 .title,
 .channel {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .channel {
+  margin-top: 5px;
   font-size: 0.6rem;
   color: #ccc;
 }
 
+.count {
+  font-size: 0.6rem;
+}
+
 @media screen and (max-width: 48rem) {
-  
+  .video {
+    max-width: 260px;
+  }
+}
+@media screen and (max-width: 32.5rem) {
+  .video {
+    max-width: 440px;
+  }
+  .thumbnail {
+    max-height: 246px;
+  }
 }
 @media screen and (max-width: 23.438rem) {
   .video {
