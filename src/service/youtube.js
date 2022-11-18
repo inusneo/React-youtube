@@ -18,7 +18,7 @@ class Youtube {
       params: {
         part: "snippet, statistics",
         chart: "mostPopular",
-        maxResults: "25",
+        maxResults: "30",
         regionCode: "KR",
       },
     });
@@ -59,7 +59,7 @@ class Youtube {
     const response = await this.youtube.get("search", {
       params: {
         part: "snippet",
-        maxResults: "25",
+        maxResults: "30",
         q: query,
         type: "video",
         regionCode: "KR",
@@ -96,7 +96,7 @@ class Youtube {
     const response = await this.youtube.get("search", {
       params: {
         part: "snippet",
-        maxResults: "25",
+        maxResults: "30",
         q: "lapoem",
         type: "video",
         regionCode: "KR",
@@ -123,7 +123,7 @@ class Youtube {
     const response = await this.youtube.get("search", {
       params: {
         part: "snippet",
-        maxResults: "25",
+        maxResults: "30",
         q: query,
         type: "video",
         eventType: "live",
