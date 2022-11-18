@@ -1,4 +1,4 @@
-<img alt="Youtube" src="https://img.shields.io/badge/YouTube Clone%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/>
+<img alt="Youtube" src="https://img.shields.io/badge/YouTube API%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/>
 
 # Youtube Clone Use React.js
 
