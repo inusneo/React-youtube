@@ -56,13 +56,14 @@
 }
 
 .channel {
-  margin-top: 5px;
+  margin-top: 2px;
   font-size: 0.6rem;
   color: #ccc;
 }
 
 .count {
   font-size: 0.6rem;
+  color: #ccc;
 }
 
 @media screen and (max-width: 48rem) {

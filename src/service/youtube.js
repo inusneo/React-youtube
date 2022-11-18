@@ -25,6 +25,7 @@ class Youtube {
     this.finalList = [];
 
     response.data.items.map((item) => {
+      // console.log(item)
       return this.finalList.push(this.channel(item.snippet.channelId, item));
     });
     return Promise.all(this.finalList).then((values) => values);
@@ -45,7 +46,7 @@ class Youtube {
         id,
       },
     });
-    console.log(response.data.items[0]);
+    // console.log(response.data.items[0]);
     if (response.data.items[0].hasOwnProperty("snippet")) {
       response.data.items[0].channelInfo = response.data.items[0].snippet;
       delete response.data.items[0].snippet;
@@ -90,6 +91,61 @@ class Youtube {
   //   const result_1 = await response.json();
   //   return result_1.items.map((item) => ({ ...item, id: item.id.videoId }));
   // }
+
+  async lapoem() {
+    const response = await this.youtube.get("search", {
+      params: {
+        part: "snippet",
+        maxResults: "25",
+        q: "lapoem",
+        type: "video",
+        regionCode: "KR",
+      },
+    });
+
+    const newVideos = [];
+
+    response.data.items.map((video) => {
+      return newVideos.push({ ...video, id: video.id.videoId });
+    });
+
+    this.finalList = [];
+
+    newVideos.map((video) => {
+      return this.finalList.push(this.channel(video.snippet.channelId, video));
+    });
+
+    return Promise.all(this.finalList) //
+      .then((values) => values);
+  }
+
+  async liveVideo(query) {
+    const response = await this.youtube.get("search", {
+      params: {
+        part: "snippet",
+        maxResults: "25",
+        q: query,
+        type: "video",
+        eventType: "live",
+        regionCode: "KR",
+      },
+    });
+
+    const newVideos = [];
+
+    response.data.items.map((video) => {
+      return newVideos.push({ ...video, id: video.id.videoId });
+    });
+
+    this.finalList = [];
+
+    newVideos.map((video) => {
+      return this.finalList.push(this.channel(video.snippet.channelId, video));
+    });
+
+    return Promise.all(this.finalList) //
+      .then((values) => values);
+  }
 }
 
 export default Youtube;

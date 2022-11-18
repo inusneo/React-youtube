@@ -11,7 +11,6 @@ function App({ youtube }) {
   const selectVideo = (video) => {
     setSelectedVideo(video);
     window.scrollTo({ top: 0, behavior: "smooth" });
-
     // selectedCont.classList.add("video_active");
   }
   const search = useCallback(
@@ -22,14 +21,35 @@ function App({ youtube }) {
       .then(videos => setVideos(videos));
   }, [youtube]);
 
+  const lapoem = () => {
+    setSelectedVideo(null);
+    youtube
+    .lapoem()
+    .then(videos => setVideos(videos));
+  }
+
+  const mostVideo = () => {
+    setSelectedVideo(null);
+    youtube
+    .mostPopular()
+    .then(videos => setVideos(videos));
+  }
+
+  const liveVideo = useCallback(
+    query => {
+      setSelectedVideo(null);
+      youtube
+      .liveVideo(query)
+      .then(videos => setVideos(videos));
+  }, [youtube]);
+
   useEffect(() => {
     youtube.mostPopular().then(videos => setVideos(videos));
-    // youtube.channels().then(console.log);
   }, [youtube]);
 
   return (
     <div className={styles.app}>
-      <SearchHeader onSearch={search} onVideoClick={selectVideo} />
+      <SearchHeader onSearch={search} lapoem={lapoem} mostVideo={mostVideo} liveVideo={liveVideo} />
       <section className={styles.content}>
         {selectedVideo && (
           <div className={styles.detail}>

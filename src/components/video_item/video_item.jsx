@@ -26,10 +26,8 @@ const VideoItem = memo(
           <div className={styles.channel_box}>
             <p className={styles.title}>{snippet.title}</p>
             <p className={styles.channel}>{snippet.channelTitle}</p>
-            <p>
-              <span className={styles.count}>조회수 {hitCount()}회</span>
-              {/* <span className={styles.update}>{publishedDate}</span> */}
-            </p>
+            <p className={styles.count}>조회수 {hitCount()}회</p>
+            {/* <span className={styles.update}>{publishedDate}</span> */}
           </div>
         </div>
       </li>
