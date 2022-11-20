@@ -37,13 +37,13 @@ Demo Link ⇒ https://inusneo.github.io/React-youtube/
 
 ### 🔎 검색 기능
 
-![image]()
+![mytube_search](https://user-images.githubusercontent.com/77533627/202906462-1a5029c5-4778-4de5-9a25-c08b74449c6c.gif)
 
 - Youtube API를 사용하여 목록에 있는 동영상을 검색창에 입력한 키워드에 알맞는 동영상으로 변경하여 표시합니다.
 
 ### 🩻 상세 페이지
 
-![image]()
+![mytube_detail](https://user-images.githubusercontent.com/77533627/202906472-2d933b9c-9442-4aa2-86e1-1c1034e8567c.JPG)
 
 - 클릭한 콘텐츠의 비디오 플레이어, 상세 설명 등을 보여주는 비디오 상세 페이지 입니다.
 
