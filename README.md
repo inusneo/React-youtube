@@ -41,7 +41,7 @@ Demo Link ⇒ https://inusneo.github.io/React-youtube/
 
 - Youtube API를 사용하여 목록에 있는 동영상을 검색창에 입력한 키워드에 알맞는 동영상으로 변경하여 표시합니다.
 
-### 🩻 상세 페이지
+### 🎥 상세 페이지
 
 ![mytube_detail](https://user-images.githubusercontent.com/77533627/203472146-9a082529-9f3b-48a9-bac1-d8ec75d97f41.JPG)
 
