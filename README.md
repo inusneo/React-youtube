@@ -31,7 +31,7 @@ Demo Link ⇒ https://inusneo.github.io/React-youtube/
 
 ### 🪐 메인 페이지
 
-![mytube01](https://user-images.githubusercontent.com/77533627/202906515-d1eb8be1-2c22-4b26-83a0-454b370efcff.JPG)
+![mytube01](https://user-images.githubusercontent.com/77533627/203472140-0fe454c0-dbf8-4be4-a93c-dd150b408464.JPG)
 
 - Youtube Api(video, channel)를 활용하여 가장 인기 있는 동영상의 썸네일, 채널(채널 이름, 썸네일, 조회수 등), 제목 등을 표시합니다.
 
@@ -43,7 +43,7 @@ Demo Link ⇒ https://inusneo.github.io/React-youtube/
 
 ### 🩻 상세 페이지
 
-![mytube_detail](https://user-images.githubusercontent.com/77533627/202906472-2d933b9c-9442-4aa2-86e1-1c1034e8567c.JPG)
+![mytube_detail](https://user-images.githubusercontent.com/77533627/203472146-9a082529-9f3b-48a9-bac1-d8ec75d97f41.JPG)
 
 - 클릭한 콘텐츠의 비디오 플레이어, 상세 설명 등을 보여주는 비디오 상세 페이지 입니다.
 
