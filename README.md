@@ -37,7 +37,7 @@ Demo Link ⇒ https://inusneo.github.io/React-youtube/
 
 https://user-images.githubusercontent.com/77533627/206598625-6f70fedc-40a4-41e2-a887-c69ebef1cfd3.mov
 
-- Mobile / Tablet / PC 반응형 디자인을 적용했습니다.
+- Mobile / Tablet / PC 디바이스를 기준의 반응형 디자인을 적용했습니다.
 
 ### 🔎 검색 기능
 
