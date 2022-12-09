@@ -35,6 +35,10 @@ Demo Link ⇒ https://inusneo.github.io/React-youtube/
 
 - Youtube Api(video, channel)를 활용하여 가장 인기 있는 동영상의 썸네일, 채널(채널 이름, 썸네일, 조회수 등), 제목 등을 표시합니다.
 
+https://user-images.githubusercontent.com/77533627/206598625-6f70fedc-40a4-41e2-a887-c69ebef1cfd3.mov
+
+- Mobile / Tablet / PC 반응형 디자인을 적용했습니다.
+
 ### 🔎 검색 기능
 
 ![mytube_search](https://user-images.githubusercontent.com/77533627/202906462-1a5029c5-4778-4de5-9a25-c08b74449c6c.gif)
